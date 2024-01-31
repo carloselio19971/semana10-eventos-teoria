@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+    background-color: #91d4ff;
+}
+
+.contenedor-evento{
+    height: 9500px;
+    width: 800px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.ejemplo-tipo-evento{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imagen-tipo-estructura{
+    height: 120px;
+    width: 60px;
+}
+
+.imagen-tipo-estructura img{
+    height: 100%;
+    
+}
+
+.estructura{
+    margin-top: 20px;
+}
+
+.tipos-eventos{
+    margin-top: 20px;
+}
+
+.contenedor-boton{
+    width: 120px;
+    height: 20px;
+
+}
+.ejemplo-evento-mouse, .contenedor-boton{
+    margin-top: 20px;
+}
+
+.btn-click{
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid blue;
+    font-size: 15px;
+}
+
+.imagen,imagen-ejemplo{
+    margin-top: 20px;
+    height: 100px;
+}
+
+.imagen img{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.imagen-ejemplo img {
+    width: 80%
+}
+
+.ejemplo-2{
+    margin-top: 200px;
+}
+
+#contenedor-creador-js{
+    padding-top: 40px;
+}
+
+.evento-inputs{
+    margin-top: 30px;
+}
+
+.event{
+    margin-top: 20px;
+}
+
+.contenedor-imagen-ejemplo{
+    margin-top: 50px;
+}
+
+.contenedor-imagen-ejemplo{
+    height: 100px;
+}
+
+.contenedor-imagen-ejemplo img{
+    height: 100%;
+}
+
+ .form-input form {
+   
+    text-align: center;
+    background-color: #91d4ff;
+    height: 120px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario-submit form {
+    text-align: center;
+    background-color: #91d4ff;
+    height: 120px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ejemplo-evento-input div{
+    margin-top: 10px;
+}
+
+.btn-enviar{
+    background-color:white;
+    color:black;
+    border: 1px soli black;
+    border-radius: 20px;
+    height: 20px;
+    width: 100px;
+}
+
+.contenedor-imagen , .imagen-ejemplo-blur{
+    height: 220px;
+    margin-top: 20px;
+}
+
+.contenedor-imagen img{
+    height: 100%;
+}
+
+.imagen-ejemplo-blur img {
+    height: 100%;
+}
+
+.evento-submit{
+    margin-top: 20px;
+}
+
+.contenedor-imagen-prevent-default{
+    height: 210px;
+}
+
+.contenedor-imagen-prevent-default img{
+    height: 100%;
+}
+
+.contenedor-img-submit{
+    height: 220px;
+}
+
+.contenedor-img-submit img{
+    height: 100%;
+}
+
+.evento-scrool{
+    margin-top: 50px;
+}
+
+.ejemplo-event-bubbling{
+    margin-top: 100px;
+}
+
+#card{
+   
+    height: 150px;
+    color:white;
+    background-color: blue;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}

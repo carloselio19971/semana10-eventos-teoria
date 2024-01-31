@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="contenedor-evento">
+        <div class="eventos-fundamentos">
+            <div class="definicion">
+                <h1>¿Que son los eventos</h1>
+                <p>Cualquier interaccion que tenga el usuario con nuestra vista, en la mayoria de los casos</p>
+                <nav class="ejemplo-tipo-evento">
+                    <ul>
+                        <li>
+                            Click
+                        </li>
+                        <li>
+                            Escribir
+                        </li>
+                        <li>
+                            Scroll
+                        </li>
+                        <li>
+                            Hover
+                        </li>
+                    </ul>
+                </nav>
+                <p>Pero tambien existen eventos del navegador: cuando carga la pagina, en el cual <strong>no existe la interccion con el usuario DOMContentLoaded</strong></p>
+            </div>
+            <div class="estructura">
+                <div class="texto-estructura">
+                    <h2>Estrutura de un evento (Listener)</h2>
+
+                    <nav class="ejemplo-tipo-evento">
+                        <ul>
+                            <li>Elemento que emitira el evento</li>
+                        </ul>
+                        <ul>
+                            <li>Tipo de Evento a Ejecutar</li>
+                        </ul>
+                        <ul>
+                            <li>Callback o funcion para realizar el trabajo</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="imagen-tipo-estructura">
+                    <img src="img/esctrutura-evento.jpg">
+                </div>
+                <p>Es importante tener encuenta que evento  <strong>DOMContentLoaded</strong> va ejecutarse solamente cuando <strong>termina de cargar la vista o pagina</strong></p>
+            </div>
+            <div class="tipos-eventos">
+                <div class="eventos-mouse">
+                    <div class="text-evento-mouse">
+                        <h2>Eventos de Mouse</h2>
+                        <p>Existen disintos tipos de eventos de mouse</p>
+                        <nav class="ejemplo-tipo-evento">
+                            <li>
+                                <a><strong>click</strong> Se activa cuando doy click en elemento</a>
+                            </li>
+                            <li>
+                                <a><strong>mouseup:</strong> se activa cuando ingreso al elemento</a>
+                            </li>
+                            <li>
+                                <a><strong>dblclick</strong>Se activa cuando doy doble click en element</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="ejemplo-evento-mouse">
+                        <div class="ejemplo-1">
+                            <h2 style="margin-bottom: 5px;">Ejemplo 1</h2>
+                            <p>Evento que al click me muestra una alerta</p>
+                            <p>Ejemplo se tiene un boton que al hacer <strong>click cambia a color rojo</strong>, al hacer doble click se vuele a su estado normal </p>
+                            <p></p>
+                            <div class="contenedor-boton">
+                                <button class="btn-click" id="btn-click-mouse">Eventos de Mouse</button>
+                            </div>
+                            <div class="imagen">
+                                <img src="img/eventos-mouse.jpg">
+                            </div>
+                        </div>
+                        <div class="ejemplo-2">
+                            <h2>Ejemplo 2 </h2>
+                            <p>Crear un boton cuando hago click en un boton</p>
+                            <div class="contenedor-boton">
+                                <button class="btn-click" id="btn-click-mouse-2">Eventos de Mouse</button>
+                            </div>
+                            <div id="contenedor-creador-js">
+                                
+                            </div>
+                            <div class="imagen-ejemplo">
+                                <img src="img/ejemplomouse2.jpg">
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="event">
+                    <div class="texto-event">
+                        <h2>Event</h2>
+                        <p><strong>Consideras que cada eventos tiene metodos y propiedades especificas que se guardan en parametro event</strong></p>
+                        <h2">Ejemplo</h2>
+                        <p>Tengo boton que al hacer click me dice indica su codigo html en consola</p>
+                    </div>
+                    <div class="ejemplo-e">
+                        <div class="contenedor-boton">
+                            <button class="btn-click" id="btn-click-mouse-3">Eventos de Mouse</button>
+                        </div>
+                    </div> 
+                    <div class="contenedor-imagen-ejemplo">
+                        <img src="img/ejemploe.jpg">
+                        <img src="img/consolae.jpg">
+                        
+                    </div>    
+                </div>
+                <div class="evento-inputs">
+                    <div class="texto-evento-input">
+                        <h2>Eventos tipo input</h2>
+                        <p>Esta relacionado con los eventos  de tipo formulario</p>
+                        <p>Existen 2 tipos una para <strong>los inputs del formulario y otro para los submit cuando envias la informacion</strong></p>
+                    </div>
+                    <div class="ejemplo-evento-input">
+                        <div class="evento-blur">
+                            <div class="texto-blur">
+                                <h2>Blur</h2>
+                                <p>El evento de tipo blur se activa cuando salgo del input</p>
+                            </div>
+                            <div class="imagen-blur">
+                                <img src="img/blur.jpg">
+                                <img src="img/blurconsola.jpg">
+                            </div>
+                        </div>
+                        <div class="evento-change">
+                            <div class="texto-blur">
+                                <h2>Change</h2>
+                                <p>Este evento se activa cuando el valor de un elemento cambia, generalmente después de que el usuario ha realizado alguna acción</p>
+                            </div>
+                            <div class="imagen-blur">
+                                <img src="img/change.jpg">
+                            </div>
+                        </div>
+                        <div class="evento-imput">
+                            <div class="texto-blur">
+                                <h2 style="margin-bottom: 10px;">Input</h2>
+                                <p>El evento input se activa cuando el valor de un elemento de entrada (input, textarea, etc.) cambia durante la interacción del usuario. A diferencia del evento change, que se dispara después de que el valor ha cambiado y el usuario ha confirmado la elección (como hacer clic fuera del elemento), el evento input se dispara inmediatamente cuando se modifica el contenido del elemento.</p>
+                                <p><strong>la diferencia entre el change y el input es que el input realizar elemento cuando realizo cualquier accion</strong></p>
+                            </div>
+                            <div class="imagen-blur">
+                                <img src="img/input.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <h2>Ejemplo 1</h2>
+                        <p>Ejemplo cuando ecribo en el formulario se debe mostrar en el html</p>
+                        <div class="contenedor-imagen">
+                            <img src="img/ejemplo-input.jpg">
+                        </div>
+                        <form action="">
+                            <div>
+                                <label for="inputnombre">Ingrese Nombre</label>
+                                <input  id="inputnombre" type="text">
+                            </div>
+                            <div>
+                                <label for="inputapellido">Ingrese Apellido</label>
+                                <input id="inputapellido" type="text">
+                            </div>
+                            <div>
+                                <button class="btn-enviar" vlaue="Enviar">Enviar</button>
+                            </div>
+                        </form>
+                        <div id="nuevo-elemento-creado-nombre">
+                            <h2>Texto ingresado en input  Nombre</h2>
+                            <div id="nuevo-elemento-creado-input-nombre">
+
+                            </div>
+                        </div>
+                        <div id="nuevo-elemento-creado-apellido">
+                            <h2>Texto ingresado en input  Apellido</h2>
+                            <div id="nuevo-elemento-creado-input-apellido">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 40px;">Ejemplo 2</h2>
+                    <p>Validar si el campo del elemento nombre esta vacio con el evento blur</p>
+                    <div class="imagen-ejemplo-blur">
+                        <img src="img/blurejemplo2.jpg">
+                    </div>
+
+                </div>
+                <div  class="evento-submit">
+                    <h2>Evento Submit</h2>
+                    <p>Son los eventos que se lanzan o enviar un formulario</p>
+                    <p>Tener en consideracion que todo los eventos tienen una <strong>accion por defecto</strong> a veces se necesita que no se ejecuten y usamos la metodo e.preventDefault()</p>
+                    <div class="contenedor-imagen-prevent-default">
+                        <img src="img/prevendefault.jpg">
+                    </div>
+                    <div class="ejemplo-submit">
+                        <h2>Ejemplo Submit</h2>
+                        <p>Se crea un evento tipo submit que capture el valor que escribre en cada input del formulario</p>
+                        <div class="contenedor-img-submit">
+                            <img src="img/subtminejempl.jpg">
+                        </div>
+                        <div style="margin-bottom: 60px;" class="contenedor-img-submit">
+                            <img src="img/ejemplo-final-input.jpg">
+                        </div>
+
+
+                      
+                       
+                    </div>
+                    <div class="formulario-submit">
+                        <form action="" id="formulario-submit">
+                            <div>
+                                <label for="inputnombre">Ingrese Nombre</label>
+                                <input  id="inputnombre" type="text">
+                            </div>
+                            <div>
+                                <label for="inputapellido">Ingrese Apellido</label>
+                                <input id="inputapellido" type="text">
+                            </div>
+                            <div>
+                                <button class="btn-enviar" vlaue="Enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="evento-scrool">
+                    <div class="texto-evento-scrool">
+                        <h2>Evento Scroll</h2>
+                        <p>El evento scroll en JavaScript se activa cuando se realiza el desplazamiento (scrolling) en una página web, ya sea vertical u horizontalmente. </p>
+                    </div>
+                    <div class="imagen-ejemplo">
+                        <h2>Ejemplo</h2>
+                        <p>En este ejemplo se mira como se coloca un evento scrool a la ventana en donde me muestra la posicion de desplazamiento del eje x , y en la ventana</p>
+                        <img src="img/scrool1.jpg">
+                        <img src="img/scrool2.jpg">
+                    </div>
+                   
+                </div>
+                   
+            </div>
+            <div style="margin-top: 20px;" class="event-boblig">
+                <div class="texto-evento-boobling">
+                    <h2>Event bubbling</h2>
+                    <p>Todos los elementos tiene un concepto de burbujeo , vienen desde abajo para arribar</p>
+                </div>
+                <div class="ejemplo-event-bubbling">
+                    <div id="card" class="card-element-card">
+                        <h1 id="titlecard" class="titlecardclass">Title of card</h1>
+                        <div>
+                            <p id="descripcion" class="descriptionclass">Descripcion of Card</p>
+                            <div id="info-card" class="inforcardclass"> Info Card </div>
+                        </div>
+                    </div>
+                    <div  style="margin-top:30px;"="texto-ejemplo">
+                        <p>Para este ejemplo que creo un evento click , para cada elemento del card, tanto para el titulo, descripcion y la informacion , <strong> el problema ocurre cuando doy click en el elmento mas profundo ejemplo el info , se activan los otros eventos que se propagan  de padre a hijo</strong></p>
+                    </div>
+                    <div class="ejemplo-event-bubbling">
+                        <h2>Ejemplo</h2>
+                        <div style="margin-top: 20px;" class="imagen-event">
+                            <img  style="height: 500px;" src="img/eventbublign.jpg">
+                            <img  style="height: 300px;" src="img/ejemploeventbubli.jpg">
+                            
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px;" class="solucion-event-bublling">
+                        
+                        <h2>Solucion Event bubbling</h2>
+                        <div class="solucion-1">
+                            <h2 class="margin-top:30px;">Solucion 1 e.stopPropagation()</h2>
+                            <p>Este metodo nos permite solucionar el problema, pero no es mas recomendado para ello</p>
+                            <div style="margin-top: 50px;"  class="imagen-solucion-event-blubling">
+                                <img style="height: 500px;" src="img/stoppropagation1.jpg">
+                            </div>
+                        </div>
+                        <div class="solucion-2">
+                            <h2 class="margin-top:30px;">Solucion 2 Delegation</h2>
+                            <p>Es la forma mas optima de solucionar esta problema de usando delegation que siempre va al elemento ligado al elemento padre</p>
+                            <div style="margin-top: 50px;"  class="imagen-solucion-event-blubling">
+                                <img style="height: 400px;" src="img/delegation.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
